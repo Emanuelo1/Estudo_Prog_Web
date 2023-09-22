@@ -1,0 +1,105 @@
+/* Reset de estilos para remover margens e preenchimentos padrão*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Estilização do body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Estilização do header */
+header {
+    background-color: #122b4e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilização de Navegação */
+
+nav {
+    grid-area: nav;
+    background-color: #0a0a0a;
+    color: white;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    
+}
+
+navi li {
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+
+/* Estilização do main content */
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+section {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    flex-basis: calc(33.33% - 20px);
+}
+ /* Estilizaçao do footer */
+ footer {
+    background-color: #1758a6;
+    color: white;
+    text-align: center;
+    padding: 10px;
+ }
+ .Imagens_carros{
+    width: 15rem;
+    height: 15rem;
+    padding: 7%;
+  }
+  .item {
+    border: 1px solid gray;
+    text-align: center;
+    font-size: 1.5em;
+  }
+  .menu{
+    max-width:100%;
+    height: 90%;
+  justify-content:left;
+  }
+  .menu>div{
+    display: inline-grid;
+    font-size: 1.4rem;
+    justify-content: left;
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+  .grid-template-1{
+    grid-template: 
+    "logo nav nav" 
+    "sidebar content content" 
+    "footer footer footer" / 16em ;
+  }
+  .gallery{
+    display: inline-grid;
+  }
+  
+  .sidebar{
+    grid-area: sidebar;
+    text-align: justify;
+  }
