@@ -1,0 +1,61 @@
+<div class="container">
+<form action="/users/save" method="post">
+
+{{!-- NOME DO PRODUTO --}}
+<div class="row">
+<div class="col-6">
+<label>Nome do Produto:</label>
+<input type="text" class="form-control" name="nameP" id="nome">
+
+{{!-- NOME DO FORNECEDOR--}}
+<div class="row">
+<div class="col-12">
+<label>Nome do Fornecedor:</label>
+<input type="text" class="form-control" name="nameF" id="nome">
+
+</div>
+</div>
+
+{{!-- VALOR DE COMPRA --}}
+<label>Valor de Compra:</label>
+<div class="input-group mb-2">
+  <div class="input-group-prepend">
+    <span class="input-group-text">R$</span>
+  </div>
+  <input type="text" class="col-2">
+</div>
+{{!-- VALOR DA VENDA --}}
+<label>Valor de Venda:</label>
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text">R$</span>
+  </div>
+  <input type="text" class="col-2">
+</div>
+
+</div>
+
+{{!-- DATA DA COMPRA --}}
+<div class="col-3">
+  <label>Data da Compra:</label>
+  <input type="date" class="form-control" name="dataComp" id="dataCompra">
+</div>
+{{!-- CATEGORIA --}}
+  <div class="col-2">
+    <label for="cate">Categoria:</label>
+    <select class="form-control">
+      <option value="">Frios</option>
+      <option value="">Alimentos</option>
+      <option value="">Industrializados</option>
+    </select>
+  </div>
+</div>
+<br>
+
+{{!-- BOTÃO --}}
+<button type="submit" class="btn btn-success">Enviar</button>
+<a href="/" class="btn btn-primary">Home</a>
+
+</form>
+
+</div>
