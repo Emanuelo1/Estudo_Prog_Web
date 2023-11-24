@@ -27,7 +27,9 @@ app.get('/users/add', (req, res) => {
     const nameF = req.body.nameF
     const cate = req.body.cate
     const dataComp = req.body.dataComp
-    const user = { nameP: nameP, nameF: nameF, cate: cate, dataComp: dataComp,}
+    const compra = req.body.compra
+    const venda = req.body.venda
+    const user = { nameP: nameP, nameF: nameF, cate: cate, dataComp: dataComp, compra: compra, venda: venda}
     res.render('viewuser', { user: user })
     
     })
