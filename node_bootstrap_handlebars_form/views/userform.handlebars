@@ -1,0 +1,72 @@
+{{!-- {{#if auth}} --}}
+
+<div class="container">
+<form action="/users/save" method="post">
+
+{{!-- NOME DO CARRO --}}
+<div class="row">
+<div class="col-3">
+<label>Nome do Carro:</label>
+<input type="text" class="form-control" name="name" id="nome">
+</div>
+
+{{!-- MARCA --}}
+  <div class="col-2">
+    <label for="">Marca:</label>
+    <select class="form-control" name="marca">
+      <option value="Chevrolet">Chevrolet</option>
+      <option value="Toyoata">Toyoata</option>
+      <option value="BMW">BMW</option>
+      <option value="Audi">Audi</option>
+      <option value="Fiat">Fiat</option>
+      <option value="Aston Martin">Aston Martin</option>
+    </select>
+  </div>
+
+  {{!-- POTÊNCIA --}}
+  <div class="col-2">
+    <label for="">Potencia:</label>
+    <select class="form-control" name="potencia">
+      <option value="100 CV">100 CV</option>
+      <option value="200 CV">200 CV</option>
+      <option value="350 CV">350 CV</option>
+      <option value="450 CV">450 CV</option>
+      <option value="500 CV">500 CV</option>
+    </select>
+  </div>
+
+  {{!-- CORES --}}
+  <div class="col-2">
+    <label for="">Cor:</label>
+    <select class="form-control" name="cor">
+      <option value="Vermelho">Vermelho</option>
+      <option value="Preto">Preto</option>
+      <option value="Azul">Azul</option>
+      <option value="Amarelo">Amarelo</option>
+      <option value="Cinza">Cinza</option>
+    </select>
+  </div>
+
+  {{!-- ANO --}}
+  <div class="col-2">
+    <label for="">Ano de Fabricação:</label>
+    <select class="form-control" name="ano">
+      <option value="2020">2020</option>
+      <option value="2021">2021</option>
+      <option value="2022">2022</option>
+      <option value="2023">2023</option>
+      <option value="2024">2024</option>
+    </select>
+  </div>
+</div>
+<br>
+
+{{!-- BOTÃO --}}
+<button type="submit" class="btn btn-success">Enviar</button>
+<a href="/" class="btn btn-primary">Página de Login</a>
+
+</form>
+
+</div>
+
+{{!-- {{/if}} --}}

@@ -1,0 +1,49 @@
+{{#if auth}}
+
+{{else}}
+
+   
+
+
+<form action="/user/login" method="post">
+
+ <div class="container col-md-5 col-lg-2 col-xl-6">
+        <div class="row d-flex justify-content-center align-items-center">
+        <h3 class="text-primary">Faça o Login para Entrar!</h3>
+        </div>
+        <br>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-md-9 col-lg-6 col-xl-5">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+                  class="img-fluid" alt="Sample image">
+            </div>
+        </div>
+    
+    </div>
+
+{{!-- Usuario e Senha --}}
+
+<div class="container col-2">
+<input type="text" class="form-control" name="login" placeholder="Digite aqui seu E-mail">
+<br>
+</div>
+<div class="container col-2">
+<input type="text"  class="form-control" name="senha" placeholder="Digte sua Senha">
+</div>
+<br>
+
+{{!-- Botão --}}
+<div class="container col-1">
+<input type="submit" value="Entrar" class="btn btn-primary">
+</div>
+</form>
+
+{{!-- Mensagem --}}
+<div class="container col-3">
+<h5 class="text-danger">{{message}}</h2>
+</div>
+
+{{/if}}
