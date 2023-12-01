@@ -34,7 +34,7 @@ app.get('/users/add', (req, res) => {
     })
 
     const usuario = {
-        login: 'emanuel',
+        login: 'emanuel@gmail.com',
         senha: 123
     }
 
